@@ -17,10 +17,19 @@ endif
 
 " Use :help 'option' to see the documentation for the given option.
 
+" TODO: Figure out an optimal background. Default dark.
+set background=dark
+
 set autoindent
 set backspace=indent,eol,start
 set complete-=i
 set smarttab
+
+set nu
+"hightlight Normal ctermbg=black
+set pastetoggle=<F2>
+set cursorline
+colorscheme koehler
 
 set nrformats-=octal
 
