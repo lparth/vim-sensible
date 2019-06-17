@@ -10,6 +10,7 @@ endif
 
 if has('autocmd')
   filetype plugin indent on
+  autocmd Filetype sshconfig setlocal sw=4
 endif
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
@@ -24,6 +25,7 @@ set autoindent
 set backspace=indent,eol,start
 set complete-=i
 set smarttab
+set expandtab
 
 set nu
 "hightlight Normal ctermbg=black
